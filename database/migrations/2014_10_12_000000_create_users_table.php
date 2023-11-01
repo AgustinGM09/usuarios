@@ -18,9 +18,9 @@ class CreateUsersTable extends Migration
             $table->timestampTz('created_at')->nullable();
             $table->timestampTz('updated_at')->nullable();
             $table->timestampTz('deleted_at')->nullable();
-            $table->text('first_name');
-            $table->text('last_name');
-            $table->text('email')->unique();
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->string('email')->unique();
         });
     }
 
